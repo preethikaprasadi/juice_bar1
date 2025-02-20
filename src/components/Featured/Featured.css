@@ -1,0 +1,64 @@
+.featured {
+    padding: 5rem 2rem;
+    background: var(--light);
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .juice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .juice-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: var(--shadow);
+  }
+  
+  .juice-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .emoji-bg {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    background: var(--light);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .juice-card:hover .emoji-bg {
+    transform: rotate(15deg) scale(1.1);
+  }
+  
+  .card-cta {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .card-cta:hover {
+    background: var(--dark);
+  }
