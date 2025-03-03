@@ -1,0 +1,118 @@
+.directions-container {
+    background: var(--light);
+  }
+  
+  .directions-hero {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light);
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 15px;
+  }
+  
+  .directions-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .directions-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .directions-content {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+  }
+  
+  .location-details {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+  }
+  
+  .location-details h2 {
+    font-size: 2rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+  }
+  
+  .location-details p {
+    font-size: 1.1rem;
+    color: var(--dark);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--secondary);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: var(--primary);
+  }
+  
+  .hours-text {
+    white-space: pre-line;
+  }
+  
+  .back-button {
+    padding: 0.8rem 2rem;
+    background: var(--gradient1);
+    color: var(--light);
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .directions-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .directions-hero p {
+      font-size: 1rem;
+    }
+  
+    .directions-content {
+      padding: 2rem 1rem;
+    }
+  }
