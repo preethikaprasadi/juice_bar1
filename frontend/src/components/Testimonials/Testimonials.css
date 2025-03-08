@@ -8,6 +8,13 @@
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: var(--dark);
+  max-width: 70%;
+  left: 20%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .testimonials-carousel {
