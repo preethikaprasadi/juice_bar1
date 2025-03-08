@@ -75,7 +75,9 @@ function Testimonials() {
 
   return (
     <section className="testimonials">
-      <h2>What Our Customers Say</h2>
+      <h2>Real experiences from our  happy customers.
+See why they keep coming back for more!
+</h2>
       <div className="testimonials-carousel">
         {/* Left Arrow */}
         <button className="carousel-arrow left-arrow" onClick={handlePrev}>
