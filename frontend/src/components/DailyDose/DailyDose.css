@@ -1,16 +1,16 @@
 /* General Styles */
 body {
-    margin: 0;
+    margin: 10%;
     font-family: Arial, sans-serif;
     background-color: white;
     color: #333;
   }
   
-  .container {
+  .container5 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    background-color: transparent;
   }
   
   /* Header Section */
