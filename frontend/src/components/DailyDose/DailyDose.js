@@ -67,7 +67,7 @@ const DailyDose = () => {
       ];
     
       return (
-        <div className="container">
+        <div className="container5">
       {/* Header Section */}
       <header className="header">
         <h1>
