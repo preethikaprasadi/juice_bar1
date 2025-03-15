@@ -1,133 +1,170 @@
-/* General Footer Styling */
+/* General Styles */
 .footer {
-  background: linear-gradient(135deg, #e0f7e0, #c8e6c9);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  color: #333;
+  margin: 5px;
+  
+  
+  font-family: 'Arial', sans-serif;
 }
 
-.footer-section {
-  flex: 1 1 200px;
-  margin-bottom: 1.5rem;
+.footer-content {
+  background: linear-gradient(135deg, #d6ffa4, #afedb2);
+  border-radius: 50px;
+  padding: 80px 40px 40px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  
+  
 }
 
 /* Brand Section */
-.brand-section .brand-name {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.brand-section {
+  flex: 1 1 30%;
 }
 
-.brand-section .tagline {
+.logo {
+  height: 70px; /* Adjust based on your logo size */
+  width: auto;
+}
+
+.brand-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
   font-size: 0.9rem;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
+  display: contents;
+  
 }
 
 .social-icons {
   display: flex;
-  gap: 1rem;
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .social-icons a {
-  color: #333;
+  color: rgb(0, 0, 0);
   font-size: 1.5rem;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #4caf50;
+  color: #ff6f61;
 }
 
-/* Contact Info */
-.contact-info h3,
+.contact-info p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+/* Categories and Useful Links */
+.categories,
+.useful-links {
+  flex: 1 1 15%;
+}
+
 .categories h3,
 .useful-links h3,
 .newsletter h3 {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
-.contact-info p {
-  margin: 0.5rem 0;
-}
-
-/* Categories and Useful Links */
 .categories ul,
 .useful-links ul {
   list-style: none;
   padding: 0;
 }
 
-.categories li,
-.useful-links li {
-  margin: 0.5rem 0;
+.categories ul li,
+.useful-links ul li {
+  margin-bottom: 10px;
 }
 
-.useful-links a {
-  color: #333;
+.categories ul li a,
+.useful-links ul li a {
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.useful-links a:hover {
-  color: #4caf50;
+.categories ul li a:hover,
+.useful-links ul li a:hover {
+  color: #ff6f61;
 }
 
 /* Newsletter */
-.newsletter form {
+.newsletter {
+  flex: 1 1 25%;
+  margin-right: 10px;
+}
+
+.newsletter p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.newsletter-form {
   display: flex;
-  gap: 0.5rem;
+  gap: 0px;
 }
 
-.newsletter input {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.newsletter-form input {
   flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
 }
 
-.newsletter button {
-  background-color: #f44336;
-  color: white;
+.newsletter-form button {
+  background-color: #ff6f61;
+  color: rgb(0, 0, 0);
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.newsletter button:hover {
-  background-color: #d32f2f;
+.newsletter-form button:hover {
+  background-color: #e65a50;
 }
 
 /* Footer Bottom */
 .footer-bottom {
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #ccc;
+  background-color: transparent;
+  
+  padding: 10px 20px;
+  text-align: left;
 }
 
-.bottom-links {
+.footer-bottom-content {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0.5rem 0;
+  justify-content: space-between;
+  align-items: left;
+  margin-top: 1%;
+  
 }
 
-.bottom-links a {
-  color: #333;
+.legal-links {
+  display: flex;
+  gap: 15px;
+}
+
+.legal-links a {
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.bottom-links a:hover {
-  color: #4caf50;
+.legal-links a:hover {
+  color: #ff6f61;
 }
 
 .payment-icons {
@@ -137,29 +174,30 @@
   margin-top: 0.5rem;
 }
 
-.payment-icons i {
-  font-size: 1.5rem;
-  color: #333;
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .footer {
+  .footer-content {
     flex-direction: column;
+  }
+
+  .brand-section,
+  .categories,
+  .useful-links,
+  .newsletter {
+    flex: 1 1 100%;
     text-align: center;
   }
 
   .social-icons,
-  .bottom-links,
+  .legal-links,
   .payment-icons {
     justify-content: center;
   }
 
-  .newsletter form {
+  .footer-bottom-content {
     flex-direction: column;
-  }
-
-  .newsletter button {
-    width: 100%;
+    gap: 10px;
   }
 }
