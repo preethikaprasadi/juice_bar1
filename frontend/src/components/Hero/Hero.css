@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 
 .hero {
-  height: 100vh;
+  height: 88vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,4 +209,36 @@
 
 .whatsapp-icon:hover {
   transform: translateY(-5px);
+}
+
+.social-media-icons {
+  position: relative;
+  bottom: -10%;
+  left: -65%;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column; /* Stack icons vertically */
+  z-index: 1000;
+}
+
+.social-icon {
+  font-size: 1.25rem;
+  color: var(--dark);
+  transition: color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.social-icon:hover {
+  color: var(--primary);
+  transform: translateY(-5px);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-10px); /* Adjust the floating height */
+  }
 }
