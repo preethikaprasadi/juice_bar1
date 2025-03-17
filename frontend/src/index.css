@@ -1,0 +1,36 @@
+:root {
+  --primary: #979681;
+  --secondary: #ffffff;
+  --accent: #FFE66D;
+  --dark: #000000;
+  --light: #F9F9F9;
+  --gradient: linear-gradient(135deg, #515151 0%, rgb(88, 88, 88) 100%);
+  --gradient1: linear-gradient(135deg, #fba519 0%, rgb(255, 173, 248) 100%);
+  --glass: rgba(255, 255, 255, 0.95);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
