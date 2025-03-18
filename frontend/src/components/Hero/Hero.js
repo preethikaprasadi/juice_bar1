@@ -1,5 +1,7 @@
 import React from 'react';
 import './Hero.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 //import hero1 from '../../assets/hero1.png';
 import hero2 from '../../assets/hero2.1.png';
 //import hero3 from '../../assets/hero3.png';
@@ -36,6 +38,21 @@ our best-selling favorites!</p>
           <FaWhatsapp />
         </div>
       </div>
+      {/* Social Media Icons */}
+            <div className="social-media-icons">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} className="social-icon" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTwitter} className="social-icon" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} className="social-icon" />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faYoutube} className="social-icon" />
+              </a>  
+              </div>
     </section>
   );
 }
