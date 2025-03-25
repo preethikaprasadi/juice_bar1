@@ -52,12 +52,12 @@ const Footer = () => {
         <div className="useful-links">
           <h3>Useful Links</h3>
           <ul>
-            <li><a href="/about-us">About Us</a></li>
-            <li><a href="/our-menu">Our Menu</a></li>
-            <li><a href="/order-online">Order Online</a></li>
+            <li><a href="/About">About Us</a></li>
+            <li><a href="/Menu">Our Menu</a></li>
+            <li><a href="/OrderOnline">Order Online</a></li>
             <li><a href="/rewards-program">Rewards Program</a></li>
             <li><a href="/faqs">FAQs</a></li>
-            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/Contact">Contact Us</a></li>
           </ul>
         </div>
 
