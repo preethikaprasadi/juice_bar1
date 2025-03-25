@@ -1,7 +1,7 @@
 /* General Styles */
 .footer {
-  margin: 5px;
-  
+  margin: 0px;
+  padding-bottom: 10px;
   
   font-family: 'Arial', sans-serif;
 }
@@ -139,8 +139,8 @@
 /* Footer Bottom */
 .footer-bottom {
   background-color: transparent;
-  
-  padding: 10px 20px;
+
+  padding: 10px 150px 0px 100px;
   text-align: left;
 }
 
